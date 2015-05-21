@@ -6,13 +6,13 @@ angular.module('starter')
 		.state('summary', {
 			url:"/summary", 
 			templateUrl: 'pages/workout/summary.html', 
-			controller: 'workoutCtrl'
+			controller: 'summaryCtrl'
 		})
 
 		.state('psyche', {
 			url:"/psyche", 
 			templateUrl: 'pages/workout/psyche.html', 
-			controller: 'workoutCtrl'
+			controller: 'psycheCtrl'
 		})
 
 		.state('exercises', {
@@ -25,8 +25,7 @@ angular.module('starter')
 
 })
 
-.controller('workoutCtrl', function ($scope, $state){
-
+.controller('summaryCtrl', function($scope, $state) {
 	$scope.psycheRedirect = function(){
 			$state.go('psyche'); 
 	}
@@ -34,8 +33,41 @@ angular.module('starter')
 	$scope.exercises = [
 		{title: 'exercise 1'}, 
 		{title: 'exercise 2'}, 
-		{title: 'exercise 3'}
+		{title: 'exercise 3'}, 
+		{title: 'exercise 4'}
 	]; 
+})
+
+
+.controller('psycheCtrl', function($scope, $state, $timeout){ 
+	$timeout(function() { 
+		$state.go('exercises'); 
+	}, 3000); 
+})
+
+
+.controller('workoutCtrl', function ($scope, $state){
+	$scope.exercises = [
+		{title: 'exercise 1', 
+		id: 1}, 
+		{title: 'exercise 2', 
+		id: 2}, 
+		{title: 'exercise 3', 
+		id: 3}, 
+		{title: 'exercise 4', 
+		id: 4}
+	]; 
+
+	$scope.currentExercise = $scope.exercises[0]
+
+	$scope.nextExercise = function (){ 
+		console.log($scope.currentExercise.id)
+
+		if($scope.currentExercise.id < $scope.exercises.length){
+			nextExerciseID = $scope.currentExercise.id++; 
+			$scope.currentExercise = $scope.exercises[nextExerciseID]; 
+		}
+	}
 }); 
 
 
