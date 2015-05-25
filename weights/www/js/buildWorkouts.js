@@ -3,10 +3,10 @@ angular.module('starter')
 	$stateProvider
 	//loading states
 
-		.state('selectWorkouts', {
-			url:"/selectWorkouts", 
-			templateUrl: 'pages/selectWorkouts.html', 
-			controller: 'selectWorkoutsCtrl'
+		.state('buildWorkouts', {
+			url:"/buildWorkouts", 
+			templateUrl: 'pages/buildWorkout.html', 
+			controller: 'buildWorkoutsCtrl'
 		}); 
 
 	
@@ -14,14 +14,10 @@ angular.module('starter')
 
 })
 
-.controller('selectWorkoutsCtrl', function ($scope, $state){
+.controller('buildWorkoutsCtrl', function ($scope, $state){
 
 	$scope.workoutPageRedirect = function(){
 			$state.go('summary'); 
-	}
-
-	$scope.buildWorkoutPageRedirect = function(){ 
-			$state.go('buildWorkouts'); 
 	}
 
 	$scope.workoutOptions = [
@@ -29,7 +25,6 @@ angular.module('starter')
 		{title: 'Workout 2'}, 
 		{title: 'Workout 3'}
 	]; 
-
 
 }); 
 
