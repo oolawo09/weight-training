@@ -20,7 +20,18 @@ angular.module('starter')
 			templateUrl: 'pages/workout/exercises.html', 
 			controller: 'workoutCtrl'
 		})
-	
+
+		.state('information', {
+			url:"/information", 
+			templateUrl: 'pages/workout/information.html', 
+			controller: 'informationCtrl'
+		})
+
+		.state('congratulations', {
+			url:"/congratulations", 
+			templateUrl: 'pages/workout/congratulations.html', 
+			controller: 'congratulationsCtrl'
+		})		
 
 
 })
@@ -58,16 +69,44 @@ angular.module('starter')
 		id: 4}
 	]; 
 
+	$scope.nextExerciseLabel = 'next exercise'
+
 	$scope.currentExercise = $scope.exercises[0]
 
 	$scope.nextExercise = function (){ 
-		console.log($scope.currentExercise.id)
 
-		if($scope.currentExercise.id < $scope.exercises.length){
+		if($scope.currentExercise.id < ( $scope.exercises.length - 1)){
 			nextExerciseID = $scope.currentExercise.id++; 
 			$scope.currentExercise = $scope.exercises[nextExerciseID]; 
 		}
+
+		else{
+			$scope.nextExerciseLabel = 'complete'
+		}
+
+		if($scope.nextExerciseLabel == 'complete'){
+			$state.go('congratulations')
+		}
 	}
+
+	$scope.information = function(){ 
+		$state.go('information')
+	}
+
+	$scope.stop = function(){ 
+		$state.go('selectWorkouts')
+	}
+
+}) 
+
+.controller('informationCtrl', function($scope, $state){ 
+
+})
+
+.controller('congratulationsCtrl', function($scope, $state, $timeout){
+	$timeout(function() { 
+		$state.go('summary'); 
+	}, 3000); 
 }); 
 
 

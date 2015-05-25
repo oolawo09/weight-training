@@ -17,7 +17,7 @@ angular.module('starter')
 .controller('selectWorkoutsCtrl', function ($scope, $state){
 
 	$scope.workoutPageRedirect = function(){
-			$state.go('workout'); 
+			$state.go('summary'); 
 	}
 
 	$scope.workoutOptions = [
