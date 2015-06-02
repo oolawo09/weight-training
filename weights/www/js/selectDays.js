@@ -12,16 +12,20 @@ angular.module('starter')
 
 })
 
-.controller('selectDaysCtrl', function ($scope, $state){
+.controller('selectDaysCtrl', function ($scope, $state, retrieveData){
 
 	$scope.optionRedirect = function(){
 			$state.go('selectWorkouts'); 
 	}
+
+
 
 	$scope.dayOptions = [
 		{title: '2 day workout'}, 
 		{title: '3 day workout'}, 
 		{title: '4 day workout'}
 	]; 
+
+
 }); 
 
