@@ -11,21 +11,18 @@ angular.module('starter', ['ionic'])
 
     getTwoDayExercises: function(){
       $http.get("/data/toning_exercises.json").success(function(data){
-      console.log(data)
       return data[0]
       }
     )},
 
     getThreeDayExercises: function(){
       $http.get("/data/toning_exercises.json").success(function(data){
-      console.log(data)
       return data[1]
       }
     )},
 
     getFourDayExercises: function(){
       $http.get("/data/toning_exercises.json").success(function(data){
-      console.log(data)
       return data[0]
       }
     )}

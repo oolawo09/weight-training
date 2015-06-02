@@ -4,7 +4,7 @@ angular.module('starter')
 	//loading states
 
 		.state('home', {
-			url:"", 
+			url:"/", 
 			templateUrl: 'pages/home.html', 
 			controller: 'homeCtrl'
 		})
@@ -19,9 +19,13 @@ angular.module('starter')
 	}
 
 	$scope.homeOptions = [
-		{title: 'Get toned'}, 
-		{title: 'Bulk up'}, 
-		{title: 'Get healthier'}, 
-		{title: 'Continue last workout'}
+		{title: 'Get toned', 
+		id: '0'}, 
+		{title: 'Bulk up', 
+		id:'1'}, 
+		{title: 'Get healthier', 
+		id: '2'}, 
+		{title: 'Continue last workout', 
+		id: '4'}
 	]; 
 }); 

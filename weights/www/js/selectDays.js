@@ -4,7 +4,7 @@ angular.module('starter')
 	//loading states
 
 		.state('selectDays', {
-			url:"/selectDays", 
+			url:"/:workoutGoalID/selectDays", 
 			templateUrl: 'pages/selectDays.html', 
 			controller: 'selectDaysCtrl'
 		}); 
@@ -20,13 +20,16 @@ angular.module('starter')
 
 
 
-	retrieveToningData.getTwoDayExercises()
 
+	$scope.workoutGoalID = $state.params.workoutGoalID
 
 	$scope.dayOptions = [
-		{title: '2 day workout'}, 
-		{title: '3 day workout'}, 
-		{title: '4 day workout'}
+		{title: '2 day workout', 
+		id: '0'}, 
+		{title: '3 day workout',
+		id: '1'}, 
+		{title: '4 day workout',
+		id: '2'}
 	]; 
 
 

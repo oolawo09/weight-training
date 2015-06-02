@@ -4,7 +4,7 @@ angular.module('starter')
 	//loading states
 
 		.state('selectWorkouts', {
-			url:"/selectWorkouts", 
+			url:"/:workoutGoalID/selectDays/:dayID/selectWorkouts", 
 			templateUrl: 'pages/selectWorkouts.html', 
 			controller: 'selectWorkoutsCtrl'
 		}); 
@@ -14,7 +14,7 @@ angular.module('starter')
 
 })
 
-.controller('selectWorkoutsCtrl', function ($scope, $state){
+.controller('selectWorkoutsCtrl', function ($scope, $state, $stateParams, retrieveToningData, retrieveBulkingData, retrieveHealthData){
 
 	$scope.workoutPageRedirect = function(){
 			$state.go('summary'); 
@@ -28,7 +28,13 @@ angular.module('starter')
 		{title: 'Workout 1'}, 
 		{title: 'Workout 2'}, 
 		{title: 'Workout 3'}
-	]; 
+	];
+
+	$scope.newWorkoutOptions = []
+
+	
+
+
 
 
 }); 

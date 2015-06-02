@@ -16,4 +16,5 @@ angular.module('starter', ['ionic'])
       toning_exercises = angular.fromJson(data) 
     })  
 
+
 })
