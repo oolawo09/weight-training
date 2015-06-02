@@ -12,12 +12,12 @@ angular.module('starter')
 
 })
 
-.controller('selectDaysCtrl', function ($scope, $state, retrieveData){
+.controller('selectDaysCtrl', function ($scope, $state, retrieveHealthData){
 
 	$scope.optionRedirect = function(){
 			$state.go('selectWorkouts'); 
 	}
-
+	
 
 
 	$scope.dayOptions = [
