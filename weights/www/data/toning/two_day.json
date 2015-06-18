@@ -4,69 +4,77 @@
     "description": "fourdayexercises",
     "workouts": [
         {
-            "title": "workout 1",
+            "title": "first workout",
             "id": "0",
             "description": "a two day workout",
-            "exercises": [
+            "days":[
                 {
-                    "title": "exercise1",
-                    "id": "0",
-                    "description": "anexercise"
-                },
+                    "title":"day 1", 
+                    "exercises":[
+                        {"title":"exercise 1", 
+                        "description":"description",
+                        "id":"0" 
+                        }, 
+                        {"title":"exercise 2", 
+                        "description":"description",
+                        "id":"1" }, 
+                        {"title":"exercise 3", 
+                        "description":"description",
+                        "id":"2" }
+                    ]
+                }, 
                 {
-                    "title": "exercise2",
-                    "id": "1",
-                    "description": "anotherexercise"
-                },
-                {
-                    "title": "exercise3",
-                    "id": "2",
-                    "description": "thelastexercise"
+                    "title":"day 2", 
+                    "exercises":[
+                        {"title":"exercise 1", 
+                        "description":"description",
+                        "id":"0" }, 
+                        {"title":"exercise 2", 
+                        "description":"description",
+                        "id":"1"}, 
+                        {"title":"exercise 2", 
+                        "description":"description",
+                        "id":"1"}
+                    ]
                 }
+
             ]
         },
-        {
-            "title": "workout 2",
+            {
+            "title": "second workout",
             "id": "1",
             "description": "a two day workout",
-            "exercises": [
+            "days":[
                 {
-                    "title": "exercise1",
-                    "id": "0",
-                    "description": "anexercise"
-                },
+                    "title":"day 1", 
+                    "exercises":[
+                        {"title":"exercise 1", 
+                        "description":"description",
+                        "id":"0" 
+                        }, 
+                        {"title":"exercise 2", 
+                        "description":"description",
+                        "id":"1" }, 
+                        {"title":"exercise 3", 
+                        "description":"description",
+                        "id":"2" }
+                    ]
+                }, 
                 {
-                    "title": "exercise2",
-                    "id": "1",
-                    "description": "anotherexercise"
-                },
-                {
-                    "title": "exercise3",
-                    "id": "2",
-                    "description": "thelastexercise"
+                    "title":"day 2", 
+                    "exercises":[
+                        {"title":"exercise 1", 
+                        "description":"description",
+                        "id":"0" }, 
+                        {"title":"exercise 2", 
+                        "description":"description",
+                        "id":"1"}, 
+                        {"title":"exercise 2", 
+                        "description":"description",
+                        "id":"1"}
+                    ]
                 }
-            ]
-        },
-        {
-            "title": "workout 3",
-            "id": "2",
-            "description": "a two day workout",
-            "exercises": [
-                {
-                    "title": "exercise1",
-                    "id": "0",
-                    "description": "anexercise"
-                },
-                {
-                    "title": "exercise2",
-                    "id": "1",
-                    "description": "anotherexercise"
-                },
-                {
-                    "title": "exercise3",
-                    "id": "2",
-                    "description": "thelastexercise"
-                }
+
             ]
         }
     ]

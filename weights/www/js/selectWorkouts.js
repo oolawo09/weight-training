@@ -30,7 +30,8 @@ angular.module('starter')
 	promise().success(function(data){
 		$scope.workoutOptions = data.workouts
 		getAndSetCurrentWorkout.setCurrentWorkout($scope.workoutOptions)
-		//console.log($scope.workoutOptions)
+
+		console.log($scope.workoutOptions)
 	})
 	
 	
