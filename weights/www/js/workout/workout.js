@@ -9,17 +9,8 @@ angular.module('starter')
 		})
 })
 
-.controller('workoutCtrl', function ($scope, $state){
-	$scope.exercises = [
-		{title: 'exercise 1', 
-		id: 1}, 
-		{title: 'exercise 2', 
-		id: 2}, 
-		{title: 'exercise 3', 
-		id: 3}, 
-		{title: 'exercise 4', 
-		id: 4}
-	]; 
+.controller('workoutCtrl', function ($scope, $state, getAndSetCurrentWorkout){
+	$scope.exercises = getAndSetCurrentWorkout.getCurrentWorkout()
 
 	$scope.nextExerciseLabel = 'next exercise'
 

@@ -1,6 +1,26 @@
 angular.module('starter', ['ionic'])
 
+.service('getAndSetCurrentWorkout', function($http ) {
+  var currentWorkout
+  var currentDayId = 0; 
 
+  this.setCurrentWorkout = function (workout){ 
+    currentWorkout = workout 
+  } 
+
+  this.getCurrentWorkout = function(){ 
+    return currentWorkout
+  }
+
+  this.setCurrentDay = function(){ 
+    currentDayId ++
+  }  
+
+  this.getCurrentDay = function(dayID){ 
+    return currentDayId
+  }
+
+})
 
 .factory('getToningWorkouts', function($http){
     var getTwoDayWorkouts = function(){ 

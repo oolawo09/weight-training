@@ -1,20 +1,17 @@
 angular.module('starter', ['ionic'])
 
 
-.service('retrieveData', function($http ) {
-  var toning_exercises, bulking_exercises, health_exercises
+.service('getAndSetCurrentWorkout', function($http ) {
+  var currentWorkout 
 
-    $http.get("/data/bulking_exercises.json").success( function(data){ 
-      bulking_exercises = angular.fromJson(data)
-      })
+  this.setCurrentWorkout = function (workout){ 
+    currentWorkout = workout 
+    console.log("This is the currentWorkout: " + currentWorkout)
+  } 
 
-   $http.get("/data/healthy_exercises.json").success( function(data){ 
-      health_exercises = angular.fromJson(data)
-    })
-
-    $http.get("/data/toning_exercises.json").success(function(data){ 
-      toning_exercises = angular.fromJson(data) 
-    })  
-
+  this.getCurrentWorkout = function(){ 
+    console.log("returning the currentWorkout: " + currentWorkout)
+    return currentWorkout
+  }
 
 })
