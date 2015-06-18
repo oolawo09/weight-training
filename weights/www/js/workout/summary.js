@@ -5,7 +5,7 @@ angular.module('starter')
 	//loading states
 
 		.state('summary', {
-			url:"/summary", 
+			url:"/:workoutGoalID/:dayID/:optionID/summary", 
 			templateUrl: 'pages/workout/summary.html', 
 			controller: 'summaryCtrl'
 		})

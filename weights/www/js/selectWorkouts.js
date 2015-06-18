@@ -9,12 +9,9 @@ angular.module('starter')
 			controller: 'selectWorkoutsCtrl'
 		}); 
 
-	
-
-
 })
 
-.controller('selectWorkoutsCtrl', function ($scope, $state, $stateParams, retrieveToningData, retrieveBulkingData, retrieveHealthData){
+.controller('selectWorkoutsCtrl', function ($scope, $state, getToningWorkouts){
 
 	$scope.workoutPageRedirect = function(){
 			$state.go('summary'); 
@@ -24,16 +21,19 @@ angular.module('starter')
 			$state.go('buildWorkouts'); 
 	}
 
-	$scope.workoutOptions = [
-		{title: 'Workout 1'}, 
-		{title: 'Workout 2'}, 
-		{title: 'Workout 3'}
-	];
-
-	$scope.newWorkoutOptions = []
-
+	$scope.workoutGoalID = $state.params.workoutGoalID
+	$scope.dayID = $state.params.dayID
+	$scope.workoutOptions = []
 	
 
+	var promise = getToningWorkouts.toggle($state.params.workoutGoalID,$state.params.dayID)
+
+	promise().success(function(data){
+		$scope.workoutOptions = data.workouts
+	})
+	
+	
+	
 
 
 

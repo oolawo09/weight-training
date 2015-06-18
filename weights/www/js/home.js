@@ -4,7 +4,7 @@ angular.module('starter')
 	//loading states
 
 		.state('home', {
-			url:"/", 
+			url:"", 
 			templateUrl: 'pages/home.html', 
 			controller: 'homeCtrl'
 		})
@@ -14,11 +14,8 @@ angular.module('starter')
 
 .controller('homeCtrl', function ($scope, $state){
 
-	$scope.optionRedirect = function(){
-			$state.go('selectDays'); 
-	}
 
-	$scope.homeOptions = [
+	$scope.workoutGoals = [
 		{title: 'Get toned', 
 		id: '0'}, 
 		{title: 'Bulk up', 

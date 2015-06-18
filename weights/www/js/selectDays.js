@@ -12,14 +12,7 @@ angular.module('starter')
 
 })
 
-.controller('selectDaysCtrl', ['$scope', '$state', 'retrieveToningData', function ($scope, $state, retrieveToningData){
-
-	$scope.optionRedirect = function(){
-			$state.go('selectWorkouts'); 
-	}
-
-
-
+.controller('selectDaysCtrl', function ($scope, $state, $stateParams){
 
 	$scope.workoutGoalID = $state.params.workoutGoalID
 
@@ -33,5 +26,5 @@ angular.module('starter')
 	]; 
 
 
-}]); 
+}); 
 

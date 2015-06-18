@@ -1,77 +1,103 @@
 angular.module('starter', ['ionic'])
 
-.factory('retrieveToningData', function($http) {
-  var toning_exercises, two_day_exercises, three_day_exercises, four_day_exercises
-  $http.get("/data/toning_exercises.json").success(function(data){ 
-      toning_exercises = angular.fromJson(data) 
-    })
 
-  return {
-     
 
-    getTwoDayExercises: function(){
-      $http.get("/data/toning_exercises.json").success(function(data){
-      return data[0]
+.factory('getToningWorkouts', function($http){
+    var getTwoDayWorkouts = function(){ 
+        return $http.get("/data/toning/two_day.json")
       }
-    )},
 
-    getThreeDayExercises: function(){
-      $http.get("/data/toning_exercises.json").success(function(data){
-      return data[1]
+    var getThreeDayWorkouts = function(){ 
+        return $http.get("/data/toning/three_day.json")
       }
-    )},
 
-    getFourDayExercises: function(){
-      $http.get("/data/toning_exercises.json").success(function(data){
-      return data[0]
+    var getFourDayWorkouts = function(){
+        return $http.get("/data/toning/four_day.json")
       }
-    )}
-  }
+
+    return{     
+      toggle: function(days){ 
+        if(days === 0)
+          return getTwoDayWorkouts
+        else if (days === 1)
+          return getThreeDayWorkouts
+        else 
+          return getFourDayWorkouts
+
+      }
+    }
+
 })
 
-.factory('retrieveBulkingData', function($http) {
-  var bulking_exercises, two_day_exercises, three_day_exercises, four_day_exercises
-  $http.get("/data/bulking_exercises.json").success(function(data){ 
-      bulking_exercises = angular.fromJson(data) 
-    })  
+.factory('getBulkingWorkouts', function($http){
 
-  return {
-  
+    var getTwoDayWorkouts = function(){ 
+        return $http.get("/data/bulking/two_day.json")
+      }
 
-    getTwoDayExercises: function(){
-      return bulking_exercises[0]
-    },
+    var getThreeDayWorkouts = function(){ 
+        return $http.get("/data/bulking/three_day.json")
+      }
 
-    getThreeDayExercises: function(){
-      return bulking_exercises[1]
-    },
+    var getFourDayWorkouts = function(){
+        return $http.get("/data/bulking/four_day.json")
+      }
 
-    getFourDayExercises: function(){
-      return bulking_exercises[2]
+    return{     
+      toggle: function(days){ 
+        if(days === 0)
+          return getTwoDayWorkouts
+        else if (days === 1)
+          return getThreeDayWorkouts
+        else 
+          return getFourDayWorkouts
+
+      }
     }
-  }
+
+
 })
 
-.factory('retrieveHealthData', function($http) {
-  var health_exercises, two_day_exercises, three_day_exercises, four_day_exercises
-  $http.get("/data/healthy_exercises.json").success(function(data){ 
-      health_exercises = angular.fromJson(data) 
-    }) 
+.factory('getHealthyWorkouts', function($http){
 
-  return {
-  
+    var getTwoDayWorkouts = function(){ 
+        return $http.get("/data/healthy/two_day.json")
+      }
 
-    getTwoDayExercises: function(){
-      return health_exercises[0]
-    },
+    var getThreeDayWorkouts = function(){ 
+        return $http.get("/data/healthy/three_day.json")
+      }
 
-    getThreeDayExercises: function(){
-      return health_exercises[1]
-    },
+    var getFourDayWorkouts = function(){
+        return $http.get("/data/healthy/four_day.json")
+      }
 
-    getFourDayExercises: function(){
-      return health_exercises[2]
+    return{     
+      toggle: function(days){ 
+        if(days === 0)
+          return getTwoDayWorkouts
+        else if (days === 1)
+          return getThreeDayWorkouts
+        else 
+          return getFourDayWorkouts
+
+      }
     }
-  }
-}); 
+
+})
+
+.factory('pullWorkouts', function($http, getToningWorkouts, getBulkingWorkouts, getHealthyWorkouts){
+    return{ 
+      toggle: function(goal, days){ 
+        if(goal == 0)
+          return getToningWorkouts.toggle(days) 
+        else if(goal == 1)
+          return getBulkingWorkouts.toggle(days)
+        else if(goal == 2)
+          return getHealthyWorkouts.toggle(days)
+        else 
+          return // contain code to pull up most recent workout 
+      }
+    }
+});
 

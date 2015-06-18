@@ -1,1 +1,26 @@
 /* Empty. Add your own CSS if you like */
+
+
+/*selectWorkout*/
+
+.selectWorkout .caption-tabs { 
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.selectWorkout .caption-tabs a {
+	position: relative;
+	float: left;
+	min-width: 50%;
+	height: 40px;
+	line-height: 40px;
+}
+
+.selectWorkout .caption {
+	position: relative;
+	margin-top: 10px;
+	padding: 20px;
+	clear: both
+}
+

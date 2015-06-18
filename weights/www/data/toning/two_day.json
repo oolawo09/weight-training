@@ -1,0 +1,73 @@
+{
+    "title": "two_day_exercises",
+    "id": "0",
+    "description": "twodayexercises",
+    "workouts": [
+        {
+            "title": "workout 1",
+            "id": "1",
+            "description": "aworkout",
+            "exercises": [
+                {
+                    "title": "exercise1",
+                    "id": "0",
+                    "description": "anexercise"
+                },
+                {
+                    "title": "exercise2",
+                    "id": "1",
+                    "description": "anotherexercise"
+                },
+                {
+                    "title": "exercise3",
+                    "id": "2",
+                    "description": "thelastexercise"
+                }
+            ]
+        },
+        {
+            "title": "workout 2",
+            "id": "2",
+            "description": "aworkout",
+            "exercises": [
+                {
+                    "title": "exercise1",
+                    "id": "0",
+                    "description": "anexercise"
+                },
+                {
+                    "title": "exercise2",
+                    "id": "1",
+                    "description": "anotherexercise"
+                },
+                {
+                    "title": "exercise3",
+                    "id": "2",
+                    "description": "thelastexercise"
+                }
+            ]
+        },
+        {
+            "title": "workout 3",
+            "id": "3",
+            "description": "aworkout",
+            "exercises": [
+                {
+                    "title": "exercise1",
+                    "id": "0",
+                    "description": "anexercise"
+                },
+                {
+                    "title": "exercise2",
+                    "id": "1",
+                    "description": "anotherexercise"
+                },
+                {
+                    "title": "exercise3",
+                    "id": "2",
+                    "description": "thelastexercise"
+                }
+            ]
+        }
+    ]
+}
