@@ -5,8 +5,8 @@
     "workouts": [
         {
             "title": "workout 1",
-            "id": "1",
-            "description": "aworkout",
+            "id": "0",
+            "description": "a four day workout",
             "exercises": [
                 {
                     "title": "exercise1",
@@ -27,8 +27,8 @@
         },
         {
             "title": "workout 2",
-            "id": "2",
-            "description": "aworkout",
+            "id": "1",
+            "description": "a four day workout",
             "exercises": [
                 {
                     "title": "exercise1",
@@ -49,8 +49,8 @@
         },
         {
             "title": "workout 3",
-            "id": "3",
-            "description": "aworkout",
+            "id": "2",
+            "description": "a four day workout",
             "exercises": [
                 {
                     "title": "exercise1",

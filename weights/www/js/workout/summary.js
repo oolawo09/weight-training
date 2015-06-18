@@ -11,15 +11,20 @@ angular.module('starter')
 		})
 })
 
-.controller('summaryCtrl', function($scope, $state) {
+.controller('summaryCtrl', function($scope, $state, pullWorkouts) {
 	$scope.psycheRedirect = function(){
 			$state.go('psyche'); 
 	}
 
-	$scope.exercises = [
-		{title: 'exercise 1'}, 
-		{title: 'exercise 2'}, 
-		{title: 'exercise 3'}, 
-		{title: 'exercise 4'}
-	]; 
+	$scope.workoutGoalID = $state.params.workoutGoalID
+	$scope.dayID = $state.params.dayID
+	$scope.workoutID = $state.params.optionID
+	$scope.exercises = []
+
+	var promise = pullWorkouts.toggle($state.params.workoutGoalID, $state.params.dayID) 
+	promise().success( function(data){
+		$scope.exercises = data.workouts[$scope.workoutID].exercises
+	})
+
+
 })

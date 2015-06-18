@@ -17,12 +17,16 @@ angular.module('starter', ['ionic'])
 
     return{     
       toggle: function(days){ 
-        if(days === 0)
+        if(days == 0){
           return getTwoDayWorkouts
-        else if (days === 1)
+
+        }
+        else if (days == 1){
           return getThreeDayWorkouts
-        else 
+        }
+        else{ 
           return getFourDayWorkouts
+        }
 
       }
     }
@@ -45,9 +49,9 @@ angular.module('starter', ['ionic'])
 
     return{     
       toggle: function(days){ 
-        if(days === 0)
+        if(days == 0)
           return getTwoDayWorkouts
-        else if (days === 1)
+        else if (days == 1)
           return getThreeDayWorkouts
         else 
           return getFourDayWorkouts
@@ -74,9 +78,9 @@ angular.module('starter', ['ionic'])
 
     return{     
       toggle: function(days){ 
-        if(days === 0)
+        if(days == 0)
           return getTwoDayWorkouts
-        else if (days === 1)
+        else if (days == 1)
           return getThreeDayWorkouts
         else 
           return getFourDayWorkouts
@@ -89,8 +93,9 @@ angular.module('starter', ['ionic'])
 .factory('pullWorkouts', function($http, getToningWorkouts, getBulkingWorkouts, getHealthyWorkouts){
     return{ 
       toggle: function(goal, days){ 
-        if(goal == 0)
+        if(goal == 0){
           return getToningWorkouts.toggle(days) 
+        }
         else if(goal == 1)
           return getBulkingWorkouts.toggle(days)
         else if(goal == 2)

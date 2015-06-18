@@ -11,7 +11,7 @@ angular.module('starter')
 
 })
 
-.controller('selectWorkoutsCtrl', function ($scope, $state, getToningWorkouts){
+.controller('selectWorkoutsCtrl', function ($scope, $state, pullWorkouts){
 
 	$scope.workoutPageRedirect = function(){
 			$state.go('summary'); 
@@ -26,10 +26,11 @@ angular.module('starter')
 	$scope.workoutOptions = []
 	
 
-	var promise = getToningWorkouts.toggle($state.params.workoutGoalID,$state.params.dayID)
+	var promise = pullWorkouts.toggle($state.params.workoutGoalID,$state.params.dayID)
 
 	promise().success(function(data){
 		$scope.workoutOptions = data.workouts
+		console.log($scope.workoutOptions)
 	})
 	
 	

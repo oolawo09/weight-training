@@ -1,11 +1,7 @@
 <ion-view title="">
 	<ion-content>
 
-	<ion-nav-bar>
-  		<ion-nav-back-button>
-  			<i class="ion-arrow-left-c"></i> Back
-  		</ion-nav-back-button>
-	</ion-nav-bar>
+	
 	
 		<ion-list> 
       		<ion-item ng-repeat = "option in workoutOptions" ><a href="#/{{workoutGoalID}}/{{dayID}}/{{option.id}}/summary">{{option.title}}</a></ion-item>
