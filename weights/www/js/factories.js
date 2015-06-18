@@ -20,6 +20,10 @@ angular.module('starter', ['ionic'])
     return currentDayId
   }
 
+  this.getDayWorkout = function() { 
+    return currentWorkout[0].days[0].exercises  
+  }
+
 })
 
 .factory('getToningWorkouts', function($http){

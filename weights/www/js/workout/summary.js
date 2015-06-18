@@ -5,7 +5,7 @@ angular.module('starter')
 	//loading states
 
 		.state('summary', {
-			url:"/:workoutGoalID/:dayID/:optionID/summary", 
+			url:"/summary", 
 			templateUrl: 'pages/workout/summary.html', 
 			controller: 'summaryCtrl'
 		})
@@ -16,7 +16,6 @@ angular.module('starter')
 			$state.go('psyche'); 
 	}
 
-	$scope.exercises = getAndSetCurrentWorkout.getCurrentWorkout()[$state.params.optionID].exercises
-	getAndSetCurrentWorkout.setCurrentWorkout($scope.exercises)
-	
+	$scope.exercises = getAndSetCurrentWorkout.getDayWorkout()
+
 })

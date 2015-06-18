@@ -21,17 +21,13 @@ angular.module('starter')
 			$state.go('buildWorkouts'); 
 	}
 
-	$scope.workoutGoalID = $state.params.workoutGoalID
-	$scope.dayID = $state.params.dayID
-	$scope.workoutOptions = []
-
 	var promise = pullWorkouts.toggle($state.params.workoutGoalID,$state.params.dayID)
 
-	promise().success(function(data){
-		$scope.workoutOptions = data.workouts
-		getAndSetCurrentWorkout.setCurrentWorkout($scope.workoutOptions)
+	$scope.workoutOptions = [] 
 
-		console.log($scope.workoutOptions)
+	promise().success(function(data){
+		getAndSetCurrentWorkout.setCurrentWorkout(data.workouts)
+		$scope.workoutOptions = data.workouts
 	})
 	
 	

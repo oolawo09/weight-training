@@ -10,7 +10,7 @@ angular.module('starter')
 })
 
 .controller('workoutCtrl', function ($scope, $state, getAndSetCurrentWorkout){
-	$scope.exercises = getAndSetCurrentWorkout.getCurrentWorkout()
+	$scope.exercises = getAndSetCurrentWorkout.getDayWorkout()
 
 	$scope.nextExerciseLabel = 'next exercise'
 
@@ -38,6 +38,10 @@ angular.module('starter')
 
 	$scope.stop = function(){ 
 		$state.go('selectWorkouts')
+	}
+
+	var setNextWorkout = function () { 
+
 	}
 
 }) 
