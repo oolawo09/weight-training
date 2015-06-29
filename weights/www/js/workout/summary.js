@@ -17,5 +17,7 @@ angular.module('starter')
 	}
 
 	$scope.exercises = getAndSetCurrentWorkout.getDayWorkout()
+	$scope.currentDay = getAndSetCurrentWorkout.getCurrentWorkout()
 
+	console.log($scope.currentDay)
 })

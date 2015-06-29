@@ -11,6 +11,7 @@ angular.module('starter')
 })
 
 .controller('informationCtrl', function($scope, $state){ 
+	
 
 })
 

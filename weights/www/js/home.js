@@ -21,8 +21,10 @@ angular.module('starter')
 		{title: 'Bulk up', 
 		id:'1'}, 
 		{title: 'Get healthier', 
-		id: '2'}, 
-		{title: 'Continue last workout', 
-		id: '4'}
+		id: '2'}
 	]; 
+
+	$scope.continueLastWorkout = function(){ 
+		$state.go('summary')
+	}
 }); 

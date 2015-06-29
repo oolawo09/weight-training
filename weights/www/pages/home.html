@@ -1,10 +1,10 @@
 <ion-view title="">
   <ion-content>
     <ion-list> 
-      <ion-item ng-repeat = "goal in workoutGoals"><a href="#/{{goal.id}}/selectDays">
-      	<div>{{goal.title}}</div> 
-      	</a>
-      	</ion-item>
+      <ion-item ng-repeat = "goal in workoutGoals"><a href="#/{{goal.id}}/selectDays"> {{goal.title}} </a></ion-item>
     </ion-list>
+
+    <button class="button button-light" ng-click="continueLastWorkout()">
+    		continue last workout</button>
   </ion-content>
 </ion-view>
