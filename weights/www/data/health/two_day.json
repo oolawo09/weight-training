@@ -4,26 +4,26 @@
     "description": "twodayexercises",
     "workouts": [
         {
-            "title": " olympic style weight lifting",
+            "title": "High Intensity Interval Training",
             "id": "0",
-            "description": "a progression of exercises to get you to the level of an olympic weight lifter",
+            "description": "a blitz of fat burning workouts",
             "days":[
                 {
-                    "title":"day 1: power", 
+                    "title":" full body workouts", 
                     "exercises":[
-                        {"title":"clean and jerk", 
-                        "description":"a two-movement weightlifting exercise in which a weight is raised above the head following an initial lift to shoulder level.",
+                        {"title":"burpies", 
+                        "description":"The burpee is a full body exercise used in strength training and as an aerobic exercise. The basic movement is performed in four steps and known as a 'four-count burpee'.",
                         "id":"0", 
-                        "url": "https://www.youtube.com/embed/8miqQQJEsO0"
+                        "url": "https://www.youtube.com/embed/JZQA08SlJnM"
                         }, 
-                        {"title":"romanian deadlift", 
-                        "description":"The deadlift is a weight training exercise in which a loaded barbell is lifted off the ground to the hips, then lowered back to the ground.",
+                        {"title":"mountain climbers", 
+                        "description":"Mountain climbers exercise variations that'll work your abs hard.",
                         "id":"1", 
-                        "url":"https://www.youtube.com/embed/WtWtjViRsKo" }, 
-                        {"title":"overhead squat", 
-                        "description":"the barbell is held overhead in a wide-arm snatch grip; however, it is also possible to use a closer grip if balance allows.",
+                        "url":"https://www.youtube.com/embed/nmwgirgXLYM" }, 
+                        {"title":"lunges", 
+                        "description":"The exercise does triple duty by extensively working the quadriceps, the glutes and the hamstrings",
                         "id":"2", 
-                        "url":"https://www.youtube.com/embed/i3VMBdEBB7c" }
+                        "url":"https://www.youtube.com/embed/C0khtnI28-w" }
                     ]
                 }, 
                 {
@@ -48,26 +48,26 @@
             ]
         },
             {
-            "title": "dumbbell workout",
+            "title": "core workout",
             "id": "1",
-            "description": "a high intensity chest and arms workout with dumbbells",
+            "description": "a variety of exercises to strengthen your core",
             "days":[
              {
-                    "title":"day 2: dumbbells", 
+                    "title":"core buster", 
                     "exercises":[
-                        {"title":"overhead press", 
-                        "description":"typically performed while standing, in which a weight is pressed straight upwards from the shoulders until the arms are locked out overhead.",
+                        {"title":"crunches", 
+                        "description":"The basic crunch is the consummate abdominal exercise in a strength-training program.",
                         "id":"0", 
-                        "url":"https://www.youtube.com/embed/UUBd9X7aHSI"
+                        "url":"https://www.youtube.com/embed/MKmrqcoCZ-M"
                          }, 
-                        {"title":"biceps curl", 
-                        "description":"Although the exercises differ, a common factor of each is a 'curling' motion, where a weight (attached to, or used in conjunction with, an item of equipment listed above) is moved through an arc, primarily using the strength",
+                        {"title":"planking", 
+                        "description":"The plank (also called a front hold, hover, or abdominal bridge) is an isometric core strength exercise that involves maintaining a difficult position for extended periods of time.",
                         "id":"1", 
-                        "url":"https://www.youtube.com/embed/sAq_ocpRh_I"}, 
-                        {"title":"chest fly/flye", 
-                        "description":"A fly or flye is a strength training exercise in which the hand and arm move through an arc while the elbow is kept at a constant angle.",
+                        "url":"https://www.youtube.com/embed/pEcENWB57e0"}, 
+                        {"title":"side crunches", 
+                        "description":"This is a core exercise that uses the rack to isolate the obliques and build strength and definition using your own body weight in a side crunch.",
                         "id":"1", 
-                        "url":"https://www.youtube.com/embed/eozdVDA78K0"}
+                        "url":"https://www.youtube.com/embed/LlzoVGu88_o"}
                     ]
                 }, 
                 {

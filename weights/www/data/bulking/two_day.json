@@ -4,26 +4,26 @@
     "description": "twodayexercises",
     "workouts": [
         {
-            "title": " olympic style weight lifting",
+            "title": "lower body workout",
             "id": "0",
             "description": "a progression of exercises to get you to the level of an olympic weight lifter",
             "days":[
                 {
                     "title":"day 1: power", 
                     "exercises":[
-                        {"title":"clean and jerk", 
-                        "description":"a two-movement weightlifting exercise in which a weight is raised above the head following an initial lift to shoulder level.",
+                        {"title":"squats", 
+                        "description":"In strength training and fitness, the squat is a compound, full body exercise that trains primarily the muscles of the thighs, hips and buttocks.",
                         "id":"0", 
-                        "url": "https://www.youtube.com/embed/8miqQQJEsO0"
+                        "url": "https://www.youtube.com/embed/UXJrBgI2RxA"
                         }, 
-                        {"title":"romanian deadlift", 
-                        "description":"The deadlift is a weight training exercise in which a loaded barbell is lifted off the ground to the hips, then lowered back to the ground.",
+                        {"title":"box jump", 
+                        "description":"Plyometrics, also known as 'jump training' or 'plyos', are exercises in which muscles exert maximum force in short intervals of time, with the goal of increasing both speed and power.",
                         "id":"1", 
-                        "url":"https://www.youtube.com/embed/WtWtjViRsKo" }, 
-                        {"title":"overhead squat", 
-                        "description":"the barbell is held overhead in a wide-arm snatch grip; however, it is also possible to use a closer grip if balance allows.",
+                        "url":"https://www.youtube.com/embed/hxldG9FX4j4" }, 
+                        {"title":"lunges", 
+                        "description":"The exercise does triple duty by extensively working the quadriceps, the glutes and the hamstrings",
                         "id":"2", 
-                        "url":"https://www.youtube.com/embed/i3VMBdEBB7c" }
+                        "url":"https://www.youtube.com/embed/C0khtnI28-w" }
                     ]
                 }, 
                 {
