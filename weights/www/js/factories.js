@@ -90,15 +90,15 @@ angular.module('starter', ['ionic'])
 .factory('getHealthyWorkouts', function($http){
 
     var getTwoDayWorkouts = function(){ 
-        return $http.get("/data/healthy/two_day.json")
+        return $http.get("/data/health/two_day.json")
       }
 
     var getThreeDayWorkouts = function(){ 
-        return $http.get("/data/healthy/three_day.json")
+        return $http.get("/data/health/three_day.json")
       }
 
     var getFourDayWorkouts = function(){
-        return $http.get("/data/healthy/four_day.json")
+        return $http.get("/data/health/four_day.json")
       }
 
     return{     

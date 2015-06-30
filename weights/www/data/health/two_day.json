@@ -1,1 +1,95 @@
-two
+{
+    "title": "two_day_exercises",
+    "id": "0",
+    "description": "twodayexercises",
+    "workouts": [
+        {
+            "title": " olympic style weight lifting",
+            "id": "0",
+            "description": "a progression of exercises to get you to the level of an olympic weight lifter",
+            "days":[
+                {
+                    "title":"day 1: power", 
+                    "exercises":[
+                        {"title":"clean and jerk", 
+                        "description":"a two-movement weightlifting exercise in which a weight is raised above the head following an initial lift to shoulder level.",
+                        "id":"0", 
+                        "url": "https://www.youtube.com/embed/8miqQQJEsO0"
+                        }, 
+                        {"title":"romanian deadlift", 
+                        "description":"The deadlift is a weight training exercise in which a loaded barbell is lifted off the ground to the hips, then lowered back to the ground.",
+                        "id":"1", 
+                        "url":"https://www.youtube.com/embed/WtWtjViRsKo" }, 
+                        {"title":"overhead squat", 
+                        "description":"the barbell is held overhead in a wide-arm snatch grip; however, it is also possible to use a closer grip if balance allows.",
+                        "id":"2", 
+                        "url":"https://www.youtube.com/embed/i3VMBdEBB7c" }
+                    ]
+                }, 
+                {
+                    "title":"day 2: dumbbells", 
+                    "exercises":[
+                        {"title":"overhead press", 
+                        "description":"typically performed while standing, in which a weight is pressed straight upwards from the shoulders until the arms are locked out overhead.",
+                        "id":"0", 
+                        "url":"https://www.youtube.com/embed/UUBd9X7aHSI"
+                         }, 
+                        {"title":"biceps curl", 
+                        "description":"Although the exercises differ, a common factor of each is a 'curling' motion, where a weight (attached to, or used in conjunction with, an item of equipment listed above) is moved through an arc, primarily using the strength",
+                        "id":"1", 
+                        "url":"https://www.youtube.com/embed/sAq_ocpRh_I"}, 
+                        {"title":"chest fly/flye", 
+                        "description":"A fly or flye is a strength training exercise in which the hand and arm move through an arc while the elbow is kept at a constant angle.",
+                        "id":"1", 
+                        "url":"https://www.youtube.com/embed/eozdVDA78K0"}
+                    ]
+                }
+
+            ]
+        },
+            {
+            "title": "dumbbell workout",
+            "id": "1",
+            "description": "a high intensity chest and arms workout with dumbbells",
+            "days":[
+             {
+                    "title":"day 2: dumbbells", 
+                    "exercises":[
+                        {"title":"overhead press", 
+                        "description":"typically performed while standing, in which a weight is pressed straight upwards from the shoulders until the arms are locked out overhead.",
+                        "id":"0", 
+                        "url":"https://www.youtube.com/embed/UUBd9X7aHSI"
+                         }, 
+                        {"title":"biceps curl", 
+                        "description":"Although the exercises differ, a common factor of each is a 'curling' motion, where a weight (attached to, or used in conjunction with, an item of equipment listed above) is moved through an arc, primarily using the strength",
+                        "id":"1", 
+                        "url":"https://www.youtube.com/embed/sAq_ocpRh_I"}, 
+                        {"title":"chest fly/flye", 
+                        "description":"A fly or flye is a strength training exercise in which the hand and arm move through an arc while the elbow is kept at a constant angle.",
+                        "id":"1", 
+                        "url":"https://www.youtube.com/embed/eozdVDA78K0"}
+                    ]
+                }, 
+                {
+                    "title":"day 1: power", 
+                    "exercises":[
+                        {"title":"clean and jerk", 
+                        "description":"a two-movement weightlifting exercise in which a weight is raised above the head following an initial lift to shoulder level.",
+                        "id":"0", 
+                        "url": "https://www.youtube.com/embed/8miqQQJEsO0"
+                        }, 
+                        {"title":"romanian deadlift", 
+                        "description":"The deadlift is a weight training exercise in which a loaded barbell is lifted off the ground to the hips, then lowered back to the ground.",
+                        "id":"1", 
+                        "url":"https://www.youtube.com/embed/WtWtjViRsKo" }, 
+                        {"title":"overhead squat", 
+                        "description":"the barbell is held overhead in a wide-arm snatch grip; however, it is also possible to use a closer grip if balance allows.",
+                        "id":"2", 
+                        "url":"https://www.youtube.com/embed/i3VMBdEBB7c" }
+                    ]
+                }
+
+            ]
+        }
+    ]
+}
