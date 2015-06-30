@@ -4,14 +4,20 @@
  			 <div class="item item-text-wrap">
  			 		{{currentExercise.title}}
   			</div>
+  			<div>
+  				<iframe width="560" height="315" src="{{currentExercise.url}}" frameborder="0" allowfullscreen></iframe>
+  			</div>
+  			<div class="item item-text-wrap">
+  					{{currentExercise.description}}
+  			</div>
 		</div>
 		<button class="button button-light" ng-click="nextExercise()">
 		{{nextExerciseLabel}} 
-		  </button> </br> 
-    	 <button class="button button-light" ng-click="psycheRedirect()">pause</button>
+		  </button> 
+
 
     	<button class="button button-light" ng-click="stop()">stop</button>
-    	<button class="button button-light" ng-click="information()">information</button>
+    
 
 	</ion-content>
 </ion-view>

@@ -16,11 +16,11 @@ angular.module('starter')
 
 
 	$scope.workoutGoals = [
-		{title: 'Get toned', 
+		{title: 'get toned', 
 		id: '0'}, 
-		{title: 'Bulk up', 
+		{title: 'bulk up', 
 		id:'1'}, 
-		{title: 'Get healthier', 
+		{title: 'get healthier', 
 		id: '2'}
 	]; 
 

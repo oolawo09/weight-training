@@ -17,11 +17,11 @@ angular.module('starter')
 	$scope.workoutGoalID = $state.params.workoutGoalID
 
 	$scope.dayOptions = [
-		{title: '2 day workout', 
-		id: '0'}, 
-		{title: '3 day workout',
+		{title: 'two day workout', 
+		id: '0'},
+		{title: 'three day workout',
 		id: '1'}, 
-		{title: '4 day workout',
+		{title: 'four day workout',
 		id: '2'}
 	]; 
 

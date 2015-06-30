@@ -12,6 +12,6 @@ angular.module('starter')
 
 .controller('congratulationsCtrl', function($scope, $state, $timeout){
 	$timeout(function() { 
-		$state.go('summary'); 
+		$state.go('home'); 
 	}, 3000); 
 }); 

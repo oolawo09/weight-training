@@ -16,12 +16,13 @@ angular.module('starter', ['ionic'])
     currentDayId ++
   }  
 
-  this.getCurrentDay = function(dayID){ 
+  this.getCurrentDay = function(){ 
     return currentDayId
   }
 
   this.getDayWorkout = function() { 
-    return currentWorkout[0].days[0].exercises  
+    console.log("current workout as in factory getDayWorkout "+ currentWorkout.days[currentDayId].exercises) 
+    return currentWorkout.days[currentDayId].exercises  
   }
 
 })

@@ -4,7 +4,7 @@
 	
 	
 		<ion-list> 
-      		<ion-item ng-repeat = "option in workoutOptions" ><a href="#/{{workoutGoalID}}/{{dayID}}/{{option.id}}/summary">{{option.title}}</a></ion-item>
+      		<ion-item ng-repeat = "option in workoutOptions" ><a href="#/{{option.id}}/summary">{{option.title}}</a></ion-item>
     	</ion-list>	
     	<button class="button button-light" ng-click="buildWorkoutPageRedirect()">
     		build your own</button>

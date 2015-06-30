@@ -4,7 +4,7 @@ angular.module('starter')
 	//loading states
 
 		.state('selectWorkouts', {
-			url:"/:workoutGoalID/selectDays/:dayID/selectWorkouts", 
+			url:"/:workoutGoalID/selectWorkouts", 
 			templateUrl: 'pages/selectWorkouts.html', 
 			controller: 'selectWorkoutsCtrl'
 		}); 
@@ -21,7 +21,7 @@ angular.module('starter')
 			$state.go('buildWorkouts'); 
 	}
 
-	var promise = pullWorkouts.toggle($state.params.workoutGoalID,$state.params.dayID)
+	var promise = pullWorkouts.toggle($state.params.workoutGoalID,0)
 
 	$scope.workoutOptions = [] 
 

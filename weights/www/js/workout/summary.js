@@ -5,7 +5,7 @@ angular.module('starter')
 	//loading states
 
 		.state('summary', {
-			url:"/summary", 
+			url:"/:workoutOptionID/summary", 
 			templateUrl: 'pages/workout/summary.html', 
 			controller: 'summaryCtrl'
 		})
@@ -16,8 +16,18 @@ angular.module('starter')
 			$state.go('psyche'); 
 	}
 
-	$scope.exercises = getAndSetCurrentWorkout.getDayWorkout()
-	$scope.currentDay = getAndSetCurrentWorkout.getCurrentWorkout()
+	$scope.workoutSelected 
 
-	console.log($scope.currentDay)
+
+	if(typeof($state.params.workoutOptionID) != undefined ){
+		$scope.workoutSelected = getAndSetCurrentWorkout.getCurrentWorkout()[$state.params.workoutOptionID]; 
+		getAndSetCurrentWorkout.setCurrentWorkout($scope.workoutSelected); 
+	}
+
+
+	$scope.exercises = getAndSetCurrentWorkout.getDayWorkout()
+	console.log("exercises "+ getAndSetCurrentWorkout.getDayWorkout())
+
+
+
 })
